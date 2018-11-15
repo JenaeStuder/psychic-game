@@ -8,6 +8,7 @@ font-family: 'Just Another Hand', cursive;
 html{
     background-image: url(../images/background-blur-bokeh-220067.jpg);
     background-repeat: no-repeat;
+    z-index: 5;
 }
 header{
     font-family: Allura, cursive;
