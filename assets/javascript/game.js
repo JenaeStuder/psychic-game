@@ -20,28 +20,11 @@ var lettersToGuess = null;
 var psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
 console.log(psychicGuess);
 
-function updateGuessesLeft(){
-    document.getElementById('guessLeft').innerHtml = "Guesses Left: " + guessLeft;
-};
-function updateLettersGuessed(){
-    document.getElementById('playerGuess').innerHtml = "Wrong Guesses: " + lettersGuessed;
-};
-
-
-
-
-//logs the players input
+//logs the players input and updates the score
 document.onkeydown = function (event) {
     var verify = psychicGuess.includes(playerChoice);
     var thisGuess = event.key;
     playerChoice.push(thisGuess);
-    
-    if (playerChoice == psychicGuess) {
-        alert("You really are psychic!!!!");
-        document.getElementById('wins').innerHTML = (wins);
-            (wins += 1);
-            redo;
-    }
 
     if (guessesLeft > 0) {
         if (playerChoice == psychicChoice) {
@@ -52,7 +35,21 @@ document.onkeydown = function (event) {
             document.getElementById('guessLeft').innerHTML =(guessesLeft);
         }
         console.log(guessesLeft);
+
+        if(playerChoice == psychicGuess) {
+        alert("You really are psychic!!!!");
+        document.getElementById('wins').innerHTML = (wins);
+            (wins += 1);
+            redo;
     }
+        else if( guessesLeft === 0){
+        alert("You lose");
+        document.getElementById('losses').innerHTML =(losses);
+        (losses += 1);
+        redo;
+        }
+    }
+    };
     for (i = 0; i < 10; i++) {
         document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
         console.log(playerChoice);
@@ -62,14 +59,12 @@ document.onkeydown = function (event) {
     document.getElementById('playerGuess').innerHTML = playerChoice;
 
     lettersGuessed.push(playerChoice);
-}
+
 
 var redo = function () {
     guessesLeft = 10;
     lettersGuessed = [];
-
-    updateGuessesLeft();
-    updateLettersGuessed();
 }
-//updateLettersToGuess();
-//updateGuessesLeft();
+    //updateGuessesLeft();
+    //updateLettersGuessed();
+
