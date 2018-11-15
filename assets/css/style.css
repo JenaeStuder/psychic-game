@@ -1,0 +1,57 @@
+/*
+font-family: 'Kaushan Script', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Just Another Hand', cursive;
+*/
+
+html{
+    background-image: url(../images/background-blur-bokeh-220067.jpg);
+    background-repeat: no-repeat;
+}
+header{
+    font-family: Allura, cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: rgb(205, 101, 41);
+    padding: 20px 200px 20px 400px;
+
+}
+h2{
+    font-family: 'Just Another Hand', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    font-size: 70px;
+    text-align: center;
+    
+}
+h4{
+    font-family: 'Shadows Into Light Two', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    text-align: center;
+}
+#playerGuess{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    text-align: center;
+}
+#wins{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    text-align: center;
+}
+#guessLeft{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    text-align: center;
+}
+#losses{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(205, 101, 41);
+    background-color: rgb(205, 101, 41, 0);
+    text-align: center;
+}
