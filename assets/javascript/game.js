@@ -18,7 +18,7 @@ console.log(psychicGuess);
 function newGuess() {
     psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
     guessesLeft = 10;
-    lettersGuessed =[];
+    lettersGuessed = [];
 };
 //logs the players input and updates the score
 document.onkeydown = function (event) {
@@ -52,7 +52,7 @@ document.onkeydown = function (event) {
     console.log(playerChoice);
     document.getElementById('playerGuess').innerHTML = playerChoice;
     lettersGuessed.push(playerChoice);
-    
+
 
     //allows the guesses to be counted down until it reaches 0
     //for (i = 0; i < 10; i++) {
