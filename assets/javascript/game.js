@@ -73,23 +73,3 @@ var redo = function () {
 }
 //updateLettersToGuess();
 //updateGuessesLeft();
-
-
-/* function start() {
-    psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
-    playerChoice = (' ');
-    for (i = 0; i < psychicGuess.length; i++) {
-        lettersGuessed.push(' .')
-        document.getElementById(playerGuess).innerHTML = playerChoice.join(' , ');
-        console.log(playerChoice)
-    }
-// if (lettersGuessed.join("") == physicChoice) {
-    //    wins++
-    //     tryAmount = 10
-    //    document.getElementById('wins').innerHTML = wins;
-    //    document.getElementById('guessesLeft').innerHTML = tryAmount;
-    //     correctGuesses = [];
-    //    newRound();
-    // }
-
-} */
