@@ -14,11 +14,12 @@ var lettersGuessed = [];
 var psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
 console.log(psychicGuess);
 
+
 //Sets the stats for each new round of guesses
 function newGuess() {
-    psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
-    guessesLeft = 10;
-    lettersGuessed = [];
+   // psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
+    guessesLeft=10;
+    lettersGuessed=[];
 };
 //logs the players input and updates the score
 document.onkeydown = function (event) {
