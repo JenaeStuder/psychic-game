@@ -25,7 +25,8 @@ function newGuess() {
     lettersGuessed = [];
     guessesLeft = 10;
     psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
-    document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
+   // document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
+    document.getElementById('playerGuess').innerHTML = ('');
     // lettersGuessed.push(playerChoice);
 
     console.log(psychicGuess);
@@ -88,7 +89,7 @@ document.onkeydown = function (event) {
 
 
        // playerChoice.push(thisGuess);
-        document.getElementById('playerGuess').innerHTML = (playerChoice);
+        
         // console.log(playerChoice);
 
         // document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
