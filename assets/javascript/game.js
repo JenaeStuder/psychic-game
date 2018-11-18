@@ -15,9 +15,6 @@ var lettersGuessed = [];
 var psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
 console.log("THIS IS THE PSYCHIC'S GUESS: ", psychicGuess);
 
-// document.getElementById('playerGuess').innerHTML = playerChoice;
-//lettersGuessed.push(playerChoice);
-
 
 //Sets the stats for each new round of guesses
 function newGuess() {
@@ -48,10 +45,6 @@ document.onkeydown = function (event) {
             alert("Are you really a psychic?");
             document.getElementById('wins').innerHTML = (wins);
             (wins += 1);
-           // playerChoice = [];
-           // lettersGuessed = [];
-           // guessesLeft = 10;
-           // psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
             newGuess();
             console.log(psychicGuess);
         }
@@ -70,31 +63,17 @@ document.onkeydown = function (event) {
             console.log("TEST JOIN", joinedArray);
         }
 
-        // document.getElementById('playerGuess').innerHTML = lettersGuessed.join();
-
 // if the user doesn't get a correct answer it alerts the user that they lost and it resets the game.     
         if (guessesLeft === 0) {
             alert("You Lose");
             losses += 1;
             document.getElementById('losses').innerHTML = losses;
-           
-            // playerChoice = [];
-           // lettersGuessed = [];
-           // guessesLeft = 10;
-           // psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
-           // document.getElementById('guessLeft').innerHTML = (guessesLeft);
-           // document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
-           
             newGuess();
             console.log(psychicGuess);
         }
 
 
-       // playerChoice.push(thisGuess);
-        
-        // console.log(playerChoice);
-
-        // document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
+      
     }
     
 };
