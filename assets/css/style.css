@@ -13,42 +13,43 @@ header{
     font-family: Allura, cursive;
     font-weight: bold;
     font-size: 100px;
-    color: rgb(238, 175, 64);
-    padding: 20px 100px 20px 550px;
+    color: rgb(229, 150, 59);
+    padding: 20px 100px 20px 650px;
     text-shadow: 1.5px 1.5px rgb(187, 77, 43);
 
 }
 h2{
     font-family: 'Just Another Hand', cursive;
-    color: rgb(148, 188, 105);
+    color: rgb(229, 150, 59);
     font-size: 70px;
     text-align: center;
+    text-shadow: 1px 1px rgb()
     
 }
 h4{
     font-family: 'Shadows Into Light Two', cursive;
-    color: rgb(148, 188, 105);
+    color: rgb(229, 150, 59);
     text-align: center;
 }
 #playerGuess{
     font-family: 'Kaushan Script', cursive;
-    color:rgb(148, 188, 105);
+    color:rgb(229, 150, 59);
     text-align: center;
 }
 #wins{
     font-family: 'Kaushan Script', cursive;
-    color:rgb(148, 188, 105);
+    color:rgb(229, 150, 59);
     text-align: center;
 }
 #guessLeft{
     font-family: 'Kaushan Script', cursive;
-    color: rgb(205, 101, 41);
+    color: rgb(229, 150, 59);
     background-color: rgb(205, 101, 41, 0);
     text-align: center;
 }
 #losses{
     font-family: 'Kaushan Script', cursive;
-    color: rgb(205, 101, 41);
+    color: rgb(229, 150, 59);
     background-color: rgb(205, 101, 41, 0);
     text-align: center;
 }
