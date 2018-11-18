@@ -4,8 +4,8 @@ var psychicChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 
 //other global variables
 var playerChoice = "";
-var wins = 0;
-var losses = 0;
+var wins = 1;
+var losses = 1;
 var guessesLeft = 10;
 var lettersGuessed = [];
 // var thisGuess = [];
@@ -40,9 +40,10 @@ document.onkeydown = function (event) {
 
     console.log("Line 36 Player's guess", playerChoice);
 
-
+//tells the computer what to with the players guesses if there are more than 0 guesses available
     if (guessesLeft > 0) {
-
+//if the player guesses the same letter as the randomly generated computer guess it logs the wins and sends an alert
+//then it resets the play
         if (playerChoice == psychicGuess) {
             alert("Are you really a psychic?");
             document.getElementById('wins').innerHTML = (wins);
@@ -54,7 +55,8 @@ document.onkeydown = function (event) {
             newGuess();
             console.log(psychicGuess);
         }
-
+//if the players guess doesn't equal the computers guess the guess is logged to the HTML, a turn is subtracted
+// and it allows the player to keep guessing.
         if (playerChoice != psychicChoice) {
             console.log(lettersGuessed);
 
@@ -70,7 +72,7 @@ document.onkeydown = function (event) {
 
         // document.getElementById('playerGuess').innerHTML = lettersGuessed.join();
 
-        //TRY USING ELSE!!!!
+// if the user doesn't get a correct answer it alerts the user that they lost and it resets the game.     
         if (guessesLeft === 0) {
             alert("You Lose");
             losses += 1;
