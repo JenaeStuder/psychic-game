@@ -5,7 +5,7 @@ var psychicChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 //other global variables
 var playerChoice = "";
 var wins = 1;
-var losses = 1;
+var losses = 0;
 var guessesLeft = 10;
 var lettersGuessed = [];
 // var thisGuess = [];
@@ -22,9 +22,7 @@ function newGuess() {
     lettersGuessed = [];
     guessesLeft = 10;
     psychicGuess = psychicChoice[Math.floor(Math.random() * psychicChoice.length)];
-   // document.getElementById('playerGuess').innerHTML = lettersGuessed.join(" , ");
     document.getElementById('playerGuess').innerHTML = ('');
-    // lettersGuessed.push(playerChoice);
 
     console.log(psychicGuess);
 };
@@ -52,7 +50,6 @@ document.onkeydown = function (event) {
 // and it allows the player to keep guessing.
         if (playerChoice != psychicChoice) {
             console.log(lettersGuessed);
-
             console.log("LINE 60 BEFORE JOIN", lettersGuessed)
 
             guessesLeft--;
